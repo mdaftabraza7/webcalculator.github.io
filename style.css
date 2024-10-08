@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font: bold 18px Arial, sans-serif; /* Increased font size */
+}
+
+html {
+    height: 100%;
+    background: white;
+    background: radial-gradient(circle, #fff 20%, #ccc);
+    background-size: cover;
+}
+
+#calculator {
+    width: 500px; /* Increased width */
+    height: auto;
+    margin: 100px auto;
+    padding: 30px; /* Increased padding */
+
+    background: #0b8fcc;
+    background: linear-gradient(#0757ce, #8bceec);
+    border-radius: 5px; /* Increased border-radius for a smoother look */
+    box-shadow: 0px 4px #009de4, 0px 10px 15px rgba(0, 0, 0, 0.2);
+}
+
+#screen {
+    float: right;
+    height: 60px; /* Increased height */
+    width: 450px; /* Increased width to match calculator size */
+    padding: 0 15px; /* Increased padding */
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 3px;
+    box-shadow: inset 0px 4px rgba(0, 0, 0, 0.2);
+    font-size: 28px; /* Increased font size */
+    line-height: 60px; /* Increased line height */
+    color: white;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    text-align: right;
+    letter-spacing: 1px;
+}
+
+.keys,
+.top {
+    overflow: hidden;
+}
+
+.keys span,
+#clear,
+#back {
+    float: left;
+    cursor: pointer;
+    width: 100px; /* Increased width */
+    height: 60px; /* Increased height */
+    background: white;
+    border-radius: 3px;
+    box-shadow: 0px 4px rgba(0, 0, 0, 0.2);
+    margin: 0 7px 11px 0;
+    color: #888;
+    line-height: 60px; /* Increased line height */
+    text-align: center;
+    user-select: none;
+    transition: all 0.2s ease;
+}
+
+/* Back Button Style */
+#back {
+    background: #ffeaa7; 
+    box-shadow: 0px 4px #f9c74f; 
+    color: #333; 
+}
+
+#back:hover {
+    background: #f9c74f; 
+    box-shadow: 0px 4px #f6ab1f; 
+    color: white; 
+}
+
+#back:active {
+    top: 4px; 
+    box-shadow: 0px 0px #f6ab1f; 
+}
+
+/* Operators and other keys */
+.keys span.operator {
+    background: #FFF0F5;
+    margin-right: 0; 
+}
+
+/* Eval Button */
+.keys span.eval {
+    background: #f1ff92;
+    box-shadow: 0px 4px #9da853;
+    color: #888e5f;
+}
+
+.keys span.eval:hover {
+    background: #abb850;
+    box-shadow: 0px 4px #717a33;
+    color: #ffffff;
+}
+
+.keys span.eval:active {
+    box-shadow: 0px 0px #717a33;
+    top: 4px;
+}
+
+/* Clear Button */
+#clear {
+    background: #ff9fa8;
+    box-shadow: 0px 4px #ff7c87;
+    color: white;
+}
+
+#clear:hover {
+    background: #f68991;
+    box-shadow: 0px 4px #d3545d;
+    color: white;
+}
+
+#clear:active {
+    top: 4px;
+    box-shadow: 0px 0px #d3545d;
+}
+
+/* Other Buttons */
+.keys span:hover {
+    background: #9c89f6;
+    box-shadow: 0px 4px #6b54d3;
+    color: white;
+}
+
+.keys span:active {
+    box-shadow: 0px 0px #6b54d3;
+    top: 4px;
+}
